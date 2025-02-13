@@ -52,7 +52,7 @@ def http_detect(ip, port):
         'hikvision', 'panasonic', 'zmodo', 'lorex', 'hi3510', 'unifi.js',
         'axiscam.js' 'axis-cgi', 'stream.cgi', 'param.js', 'unifiPlayer.js',
         'mjpg/video.cgi', '/ISAPI', 'cameraControl.js', 'boschPlayer.js',
-        'motionDetection.js', 'hdPlayer.js'
+        'motionDetection.js', 'hdPlayer.js', 'ActiveX'
     ]
     try:
         url = f'http://{ip}:{port}'
