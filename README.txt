@@ -30,3 +30,9 @@ Probe: this script uses TCP-SYN probes for each port. This is done in effort
        If a SYN-ACK response is received, then the protocol/port is fully
        investigated. This operation works as a basic SYN-scanner to conserve
        resources and to keep traffic to a bare-minimum.
+
+Host generation:
+       Each endpoint IP-Address that is generated is done specifically to avoid
+       any/all IP ranges that are either reserved for internal traffic, link-local,
+       or broadcast traffic. Excluding these will heavyily reduce false-positive
+       detections and keep a load off of the internal LAN.
